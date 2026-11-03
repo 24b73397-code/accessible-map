@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Кіру — AccessMap</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header class="header"><div class="container nav"><a class="logo" href="index.html">✦ Access<span>Map</span></a><nav class="links" id="navLinks"><a href="index.html">Басты бет</a><a href="map.html">Нысандар картасы</a><a href="login.html">Кіру</a><a class="button small" href="register.html">Тіркелу</a></nav><button class="menu" id="menuBtn" aria-label="Мәзірді ашу" aria-expanded="false">☰</button></div></header>
+  <main class="auth-section"><div class="auth-card"><span class="eyebrow">Қош келдіңіз!</span><h1>Жүйеге кіру</h1><p>AccessMap платформасына кіру формасының үлгісі.</p>
+    <form id="loginForm" class="form">
+      <label for="email">Электрондық пошта</label><input id="email" type="email" placeholder="example@mail.com" autocomplete="email" required>
+      <label for="password">Құпия сөз</label><input id="password" type="password" placeholder="Құпия сөз" autocomplete="current-password" required>
+      <button class="button full" type="submit">Кіруді тексеру</button><p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+    </form><p class="auth-bottom">Аккаунтыңыз жоқ па? <a href="register.html">Тіркелу</a></p><p class="hint">Нақты авторизация сервер қосылғанда жұмыс істейді.</p>
+  </div></main>
+  <footer class="footer"><div class="container">© 2026 AccessMap · Оқу жобасы</div></footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Нысандар картасы — AccessMap</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header class="header"><div class="container nav"><a class="logo" href="index.html">✦ Access<span>Map</span></a><nav class="links" id="navLinks"><a href="index.html">Басты бет</a><a class="active" href="map.html">Нысандар картасы</a><a href="login.html">Кіру</a><a class="button small" href="register.html">Тіркелу</a></nav><button class="menu" id="menuBtn" aria-label="Мәзірді ашу" aria-expanded="false">☰</button></div></header>
+  <main class="container map-page">
+    <span class="eyebrow">Карта және каталог</span><h1>Қолжетімді нысандарды табыңыз</h1><p class="muted">Іздеу мен сүзгілер жұмыс істейді. Карта — нақты географиялық карта емес, нысандарды таңдауды көрсетуге арналған интерактивті макет.</p>
+    <div class="notice">ℹ️ Барлық нысандар мен қолжетімділік белгілері — ойдан құрастырылған демонстрациялық деректер. Нақты сапарды жоспарлауға қолданбаңыз.</div>
+    <div class="search-bar"><div class="field"><label for="search">Атау бойынша іздеу</label><input id="search" type="search" placeholder="Емхана, кітапхана..."></div><div class="field"><label for="category">Санат</label><select id="category"><option value="all">Барлық санаттар</option><option value="Медицина">Медицина</option><option value="Білім беру">Білім беру</option><option value="Сауда">Сауда</option><option value="Мәдениет">Мәдениет</option></select></div><div class="field"><label for="feature">Қолжетімділік</label><select id="feature"><option value="all">Барлық нысандар</option><option value="ramp">Пандусы бар</option><option value="lift">Лифті бар</option><option value="parking">Арнайы тұрағы бар</option></select></div></div>
+    <div class="map-layout">
+      <section class="place-list"><div class="list-heading"><h2>Нысандар</h2><span id="resultCount"></span></div><div id="places"></div></section>
+      <section class="demo-map" aria-label="Демонстрациялық карта"><div class="map-label">ИНТЕРАКТИВТІ КАРТА МАКЕТІ</div><div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-road road-three"></div><div class="map-park">🌳 Саябақ</div><div id="mapPins"></div><div class="map-note" id="mapNote">Картадан белгіні немесе тізімнен нысанды таңдаңыз.</div></section>
+    </div>
+    <section class="detail" id="detail"><h2>Нысан туралы ақпарат</h2><p class="muted">Толық ақпаратты көру үшін карточканы таңдаңыз.</p></section>
+  </main>
+  <footer class="footer"><div class="container">© 2026 AccessMap · Frontend демонстрациясы</div></footer>
+  <script src="data.js"></script><script src="app.js"></script>
+</body>
+</html>
