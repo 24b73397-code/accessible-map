@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивті карта - Қолжетімді нысандар</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">♿ Қолжетімді Карта</div>
+        <nav class="nav-links">
+            <a href="index.php">Басты бет</a>
+            <a href="map.php" class="active">Интерактивті карта</a>
+            <a href="login.php" class="btn-login">Шығу</a>
+        </nav>
+    </header>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <h3>Нысандарды іздеу</h3>
+            <input type="text" id="searchInput" placeholder="Мекенжай немесе атауы..." onkeyup="filterLocations()">
+            
+            <div class="filters">
+                <label><input type="checkbox" checked> Пандус бар</label>
+                <label><input type="checkbox" checked> Лифт / Тілағаш</label>
+                <label><input type="checkbox" checked> Арнайы тұрақ</label>
+            </div>
+
+            <div class="location-list">
+                <div class="loc-item">
+                    <h4>№1 Орталық кітапхана</h4>
+                    <p>Абай даңғылы, 15</p>
+                    <span class="badge accessible">Толық қолжетімді</span>
+                </div>
+                <div class="loc-item">
+                    <h4>Қалалық емхана</h4>
+                    <p>Бейбітшілік көшесі, 8</p>
+                    <span class="badge partial">Ішінара қолжетімді</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="map-view">
+            <div class="map-placeholder">
+                <div class="map-pin">📍</div>
+                <p>Интерактивті карта аймағы (Leaflet.js / Google Maps интеграциясы)</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
